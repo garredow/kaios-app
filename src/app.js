@@ -19,4 +19,4 @@ async function go() {
   });
 }
 
-go();
+document.querySelector('#btnOpenStore').addEventListener('click', go);
