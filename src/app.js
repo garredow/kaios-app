@@ -9,7 +9,7 @@ function go() {
     .then((res) => res.json())
     .then((app) => {
       console.log('app', app);
-      new MozActivity({
+      const inline = new MozActivity({
         name: 'open-app',
         data: {
           url: app.manifest_url,
@@ -17,6 +17,25 @@ function go() {
           appName: app.name,
         },
       });
+      inline.onerror = (e) => {
+        console.log('err', e);
+        new MozActivity({
+          name: 'open-page',
+          data: {
+            url: app.manifest_url,
+            type: 'url',
+            appName: app.name,
+          },
+        });
+      };
+      //   new MozActivity({
+      //     name: 'open-app',
+      //     data: {
+      //       url: app.manifest_url,
+      //       type: 'url',
+      //       appName: app.name,
+      //     },
+      //   });
     });
 }
 
