@@ -2,6 +2,7 @@ console.log('hello');
 
 async function go() {
   const bundleId = location.search.split('=')[1];
+  console.log('bundleId', bundleId);
   if (!bundleId) return;
 
   const app = await fetch(`/.netlify/functions/get-app?bundleId=${bundleId}`).then((res) =>
