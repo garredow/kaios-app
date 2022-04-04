@@ -15,6 +15,7 @@
   "homepage": "https://github.com/garredow/kaistore-link#readme",
   "main": "index.js",
   "scripts": {
+    "start": "netlify dev",
     "commit": "cz"
   },
   "keywords": [],
@@ -29,6 +30,7 @@
     "@semantic-release/git": "^10.0.1",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
+    "netlify-cli": "^9.16.2",
     "semantic-release": "^19.0.2",
     "typescript": "^4.6.3"
   },
