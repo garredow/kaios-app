@@ -2,6 +2,12 @@ function openStore() {
   const bundleId = location.search.split('=')[1];
   if (!bundleId) return;
 
+  const isDevice = !!window.MozActivity;
+  if (!isDevice) {
+    location.replace(`https://www.kaiostech.com/store/apps/?bundle_id=${bundleId}`);
+    return;
+  }
+
   fetch(`/.netlify/functions/get-app?bundleId=${bundleId}`)
     .then((res) => res.json())
     .then((app) => {
