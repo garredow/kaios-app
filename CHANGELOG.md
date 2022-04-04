@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/garredow/kaistore-link/compare/v1.0.1...v1.1.0) (2022-04-04)
+
+
+### Features
+
+* route to web store if not a kaios device ([d480039](https://github.com/garredow/kaistore-link/commit/d4800392866b20035ecf8f0c84e26d67caa88e08))
+
 ## [1.0.1](https://github.com/garredow/kaistore-link/compare/v1.0.0...v1.0.1) (2022-04-02)
 
 
