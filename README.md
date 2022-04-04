@@ -10,7 +10,7 @@ Link to your app on the KaiStore. Works great as a QR code!
 Scan the QR code below on your KaiOS device to be automatically taken to my game, [Wordly](https://github.com/garredow/wordly), on the KaiStore.
 
 ```
-https://kaios.app/?q=com.garrettdowns.wordly
+https://kaios.app/?id=com.garrettdowns.wordly
 ```
 
 ![Wordly](/example/qr.png)
